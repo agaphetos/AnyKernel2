@@ -26,15 +26,14 @@ getprop() { test -e /sbin/getprop && /sbin/getprop $1 || file_getprop /default.p
 abort() { ui_print "$*"; exit 1; }
 
 show_progress 1.34 4;
-ui_print " ";
+ui_print "--------------------------";
 mkdir -p /tmp/anykernel;
 cd /tmp/anykernel;
 unzip -o "$ZIP";
 
 ui_print "$(file_getprop /tmp/anykernel/anykernel.sh kernel.string)";
-ui_print " ";
-ui_print "AnyKernel2 for Sprout by Agaphetos @ xda-developers";
-ui_print " ";
+ui_print "via AnyKernel2 by osm0sis";
+ui_print "--------------------------";
 /sbin/busybox mount /system;
 
 if [ "$(file_getprop /tmp/anykernel/anykernel.sh do.devicecheck)" == 1 ]; then
@@ -78,6 +77,6 @@ if [ "$(file_getprop /tmp/anykernel/anykernel.sh do.cleanup)" == 1 ]; then
 fi;
 
 umount /system;
-ui_print " ";
+ui_print "--------------------------";
 ui_print "Done!";
 
