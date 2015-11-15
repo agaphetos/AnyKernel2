@@ -1,6 +1,6 @@
 #!/sbin/sh
-# AnyKernel2 Backend
-# osm0sis @ xda-developers
+# AnyKernel2 for Sprout
+# Agaphetos @ xda-developers
 
 OUTFD=/proc/self/fd/$2;
 ZIP="$3";
@@ -33,7 +33,7 @@ unzip -o "$ZIP";
 
 ui_print "$(file_getprop /tmp/anykernel/anykernel.sh kernel.string)";
 ui_print " ";
-ui_print "AnyKernel2 by osm0sis @ xda-developers";
+ui_print "AnyKernel2 for Sprout by Agaphetos @ xda-developers";
 ui_print " ";
 /sbin/busybox mount /system;
 
