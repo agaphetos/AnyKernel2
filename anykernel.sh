@@ -9,8 +9,8 @@ do.initd=0
 do.modules=0
 do.cleanup=1
 device.name1=sprout
-device.name2=
-device.name3=
+device.name2=sprout4
+device.name3=sprout8
 device.name4=
 device.name5=
 
